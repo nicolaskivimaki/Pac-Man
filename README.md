@@ -7,3 +7,5 @@ Kämppikseni **Gael** kommentoi tapahtumia näin:
 > *Nukuin rauhallisesti koko yön omassa huoneessani enkä käynyt syömässä herkullisen näköistä voisilmäpullaasi!*
 
 
+[gitlog.txt](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/laskarit/viikko1/gitlog.txt)
+[komentorivi.txt](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/laskarit/viikko1/komentorivi.txt)
