@@ -38,6 +38,24 @@ class TestMaksukortti(unittest.TestCase):
         self.kortti.syo_maukkaasti()
         self.assertEqual(str(self.kortti), "Kortilla on rahaa 2.5 euroa")
 
+    def test_negatiivisen_summan_lataaminen_ei_muuta_saldoa(self):
+        self.kortti.lataa_rahaa(-5)
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 10 euroa")
+
+    def test_voi_ostaa_edullisen_lounaan_kun_sen_verran_jaljella(self):
+        self.kortti.syo_edullisesti()
+        self.kortti.syo_edullisesti()
+        self.kortti.syo_edullisesti()
+        self.kortti.syo_edullisesti()
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 0 euroa")
+
+    def test_voi_ostaa_edullisen_lounaan_kun_sen_verran_jaljella(self):
+        self.kortti.lataa_rahaa(2)
+        self.kortti.syo_maukkasti()
+        self.kortti.syo_maukkasti()
+        self.kortti.syo_maukkasti()
+        self.assertEqual(str(self.kortti), "Kortilla on rahaa 0 euroa")
+
 
 
 
