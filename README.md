@@ -6,7 +6,7 @@ Kämppikseni **Gael** kommentoi tapahtumia näin:
 
 > *Nukuin rauhallisesti koko yön omassa huoneessani enkä käynyt syömässä herkullisen näköistä voisilmäpullaasi!*
 
-Tilannepäivitys:
+*Tilannepäivitys*:
 
 Konstaapeli Dönersjussen on tehnyt kiinnioton. Hän kommentoi tapahtumia näin:
 
