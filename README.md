@@ -6,6 +6,11 @@ Kämppikseni **Gael** kommentoi tapahtumia näin:
 
 > *Nukuin rauhallisesti koko yön omassa huoneessani enkä käynyt syömässä herkullisen näköistä voisilmäpullaasi!*
 
+Tilannepäivitys:
+
+Konstaapeli Dönersjussen on tehnyt kiinnioton. Hän kommentoi tapahtumia näin:
+
+> *Löysimme Gaelin sängystä voisilmäpullan murusia. Oli selkeää, että hän oli käynyt yöllä syömässä voisilmäpullan. Olemme onnellisia rikollisen kiinniotosta.*
 
 [gitlog.txt](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/laskarit/viikko1/gitlog.txt)
 [komentorivi.txt](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/laskarit/viikko1/komentorivi.txt)
