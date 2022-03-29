@@ -19,3 +19,5 @@ Konstaapeli Dönersjussen on tehnyt kiinnioton. Hän kommentoi tapahtumia näin:
 [komentorivi.txt](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/laskarit/viikko1/komentorivi.txt)
 
 [vaatimusmaarittely.md](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/vaatimusmaarittely.md)
+
+[tyoaikakirjanpito](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/tuntikirjanpito.md)
