@@ -1,6 +1,7 @@
-mermaid
 
-´´´
+
+```mermaid
+
   classDiagram
     Pelilauta <|-- Pelaaja
     Pelilauta <|-- Noppa1
@@ -89,4 +90,4 @@ mermaid
         saldo
         maksutapahtuma()
       }
-´´´
+```
