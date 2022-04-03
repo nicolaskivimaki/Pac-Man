@@ -20,7 +20,7 @@
     class Pelaaja{
       nimi
       pelinappula
-      siirrä()
+      siirra()
       ruutu
 
     }
@@ -30,11 +30,11 @@
     }
 
       class Noppa_1{
-        heitä()
+        heita()
       }
 
       class Noppa_2{      
-        heitä()
+        heita()
       }
       
       class Aloitusruutu{
