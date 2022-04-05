@@ -49,6 +49,27 @@ class Peli:
             if tapahtuma.type == pygame.QUIT:
                 exit()
 
+    def _liikuta_vasen(self):
+        
+        if self.x > 0:
+            self.x -= 10
+
+    def _liikuta_oikea(self):
+
+        if self.x < 1000-self.robo.get_width():
+                self.x += 10
+
+    def _liikuta_ylos(self):
+
+        if self.y > 0:
+                self.y -= 10
+
+    def _liikuta_alas(self):
+
+        if self.y < 1000-self.robo.get_height():
+                self.y += 10
+
+
 
     def _liikuta(self):
         if self.ylos:
@@ -67,13 +88,13 @@ class Peli:
             
         
 
-peli = Peli()
+# peli = Peli()
 
-while True:
+# while True:
 
-    peli._handle_events()
-    peli._liikuta()
-    peli._lataa_naytto()
+#     peli._handle_events()
+#     peli._liikuta()
+#     peli._lataa_naytto()
 
        
 
