@@ -8,6 +8,6 @@ class TestPeli(unittest.TestCase):
 
     def test_toimiiko_vasen_reuna(self):
         for i in range(10):
-            self.peli._liikuta_vasen
+            self.peli._liikuta_vasen()
 
-        self.assertEqual(str(self.x), "0")
+        self.assertEqual(str(self.peli.x), "0")
