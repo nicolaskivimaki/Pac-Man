@@ -6,6 +6,7 @@ class Peli:
         pygame.init()
         self.naytto = pygame.display.set_mode((1000, 1000))
         self.robo = pygame.image.load("/home/kivimani/ot-harjoitustyo/laskarit/pacman-app/src/assets/pacman.png")
+        ## kuva netistä: https://www.freeiconspng.com/thumbs/pacman-png/pacman-png-18.png
         self.y = 50
         self.x = 50
         self.ylos = False
