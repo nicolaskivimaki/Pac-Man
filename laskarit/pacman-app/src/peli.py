@@ -93,9 +93,9 @@ class Peli:
 
 # while True:
 
-#     peli._handle_events()
-#     peli._liikuta()
-#     peli._lataa_naytto()
+#    peli._handle_events()
+#    peli._liikuta()
+#    peli._lataa_naytto()
 
        
 
