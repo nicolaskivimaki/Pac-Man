@@ -3,6 +3,11 @@ classDiagram
   Index<|--Peli
   Index<|--Pelipyorii
   Index<|--Events
+  
+  class Index{
+  main()
+
+  }
 
   class Pelipyorii{
     _handle_events()
