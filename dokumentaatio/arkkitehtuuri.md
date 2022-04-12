@@ -1,26 +1,27 @@
 ```mermaid
 classDiagram
-  Start<|--Vihollinen
-  Start<|--Robo
-  Start<|--Level
+  Index<|--Peli
+  Index<|--Pelipyorii
+  Index<|--Events
 
-  class Start{
-    _lataa_naytto()
+  class Pelipyorii{
     _handle_events()
+    _aloitapeli()
 
   }
-  class Level{
+  
+  
+  class Peli{
+  
+  _liikuta_robo()
+  _vihollinen_liikkuu()
+  _lataa_naytto()
 
 
   }
 
-  class Robo{
-    _liikuta()
-
-  }
-
-  class Vihollinen{
-    _liikuta_vihollista()
+  class Events{
+    pygame.event.get()
 
   }
  
