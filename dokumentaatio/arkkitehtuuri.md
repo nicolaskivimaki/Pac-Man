@@ -3,6 +3,8 @@ classDiagram
   Index<|--Peli
   Index<|--Pelipyorii
   Index<|--Events
+  Peli--Pelipyorii
+  Pelipyorii--Events
   
   class Index{
   main()
