@@ -8,6 +8,8 @@
 
 [tyoaikakirjanpito](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/tuntikirjanpito.md)
 
+[arkkitehtuuri](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/arkkitehtuuri.md)
+
 
 ## Komentorivitoiminnot
 
@@ -23,9 +25,9 @@ poetry run invoke start
 
 Testit suoritetaan komennolla:
 
-bash
+```bash
 poetry run invoke test
-
+```
 
 ### Testikattavuus
 
@@ -33,3 +35,4 @@ Testikattavuusraportin voi generoida komennolla:
 
 ```bash
 poetry run invoke coverage-report
+```
