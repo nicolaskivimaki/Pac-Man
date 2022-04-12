@@ -23,9 +23,9 @@ poetry run invoke start
 
 Testit suoritetaan komennolla:
 
-bash
+```bash
 poetry run invoke test
-
+```
 
 ### Testikattavuus
 
@@ -33,3 +33,4 @@ Testikattavuusraportin voi generoida komennolla:
 
 ```bash
 poetry run invoke coverage-report
+```
