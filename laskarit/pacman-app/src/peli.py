@@ -89,9 +89,9 @@ class Peli:
             
         
 
-# peli = Peli()
+peli = Peli()
 
-# while True:
+#while True:
 
 #    peli._handle_events()
 #    peli._liikuta()

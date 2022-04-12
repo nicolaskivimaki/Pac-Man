@@ -11,3 +11,4 @@ class TestPeli(unittest.TestCase):
             self.peli._liikuta_vasen()
 
         self.assertEqual(str(self.peli.x), "0")
+
