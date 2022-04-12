@@ -2,9 +2,9 @@ import pygame
 
 class Peli:
 
-    def __init__(self):
+    def __init__(self, alusta):
         pygame.init()
-        self.naytto = pygame.display.set_mode((1000, 1000))
+        self.naytto = alusta
         self.robo = pygame.image.load("/home/kivimani/ot-harjoitustyo/laskarit/pacman-app/src/assets/pacman.png")
         ## kuva netistä: https://www.freeiconspng.com/thumbs/pacman-png/pacman-png-18.png
         self.vihollinen = pygame.image.load("/home/kivimani/ot-harjoitustyo/laskarit/pacman-app/src/assets/pacman.png")
@@ -20,41 +20,18 @@ class Peli:
         self.vasemmalle = False
         self.kello = pygame.time.Clock()
 
+    def paivita(self):
+
+        self._liikuta()
+        self._liikuta_vihollista()
+        self._lataa_naytto()
+
     def _lataa_naytto(self):
         self.naytto.fill((0, 0, 0))
         self.naytto.blit(self.robo, (self.x, self.y))
         self.naytto.blit(self.vihollinen, (self.vihollisen_x, self.vihollisen_y))
         pygame.display.flip()
         self.kello.tick(60)
-        
-
-    def _handle_events(self): 
-        for tapahtuma in pygame.event.get():
-
-            if tapahtuma.type == pygame.KEYDOWN: # pylint: disable=no-member
-
-                if tapahtuma.key == pygame.K_LEFT:# pylint: disable=no-member
-                    self.vasemmalle = True
-                if tapahtuma.key == pygame.K_RIGHT:# pylint: disable=no-member
-                    self.oikealle = True
-                if tapahtuma.key == pygame.K_UP:# pylint: disable=no-member
-                    self.ylos = True
-                if tapahtuma.key == pygame.K_DOWN:# pylint: disable=no-member
-                    self.alas = True
-
-            if tapahtuma.type == pygame.KEYUP:# pylint: disable=no-member
-
-                if tapahtuma.key == pygame.K_LEFT:# pylint: disable=no-member
-                    self.vasemmalle = False
-                if tapahtuma.key == pygame.K_RIGHT:# pylint: disable=no-member
-                    self.oikealle = False
-                if tapahtuma.key == pygame.K_UP:# pylint: disable=no-member
-                    self.ylos = False
-                if tapahtuma.key == pygame.K_DOWN:# pylint: disable=no-member
-                    self.alas = False
-
-            if tapahtuma.type == pygame.QUIT:# pylint: disable=no-member
-                exit()
 
 
     def _liikuta(self):
@@ -91,14 +68,14 @@ class Peli:
             
         
 
-peli = Peli()
+#peli = Peli()
 
-while True:
+#while True:
 
-    peli._handle_events()
-    peli._liikuta()
-    peli._liikuta_vihollista()
-    peli._lataa_naytto()
+#    peli._handle_events()
+#    peli._liikuta()
+#    peli._liikuta_vihollista()
+#    peli._lataa_naytto()
 
        
 
