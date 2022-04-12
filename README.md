@@ -6,9 +6,11 @@
 
 [vaatimusmaarittely.md](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/vaatimusmaarittely.md)
 
-[tyoaikakirjanpito](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/tuntikirjanpito.md)
+[tyoaikakirjanpito.md](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/tuntikirjanpito.md)
 
-[arkkitehtuuri](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/arkkitehtuuri.md)
+[arkkitehtuuri.md](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/arkkitehtuuri.md)
+
+[changelog.md](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/changelog.md)
 
 
 ## Komentorivitoiminnot
