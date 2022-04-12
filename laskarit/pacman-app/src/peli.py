@@ -6,8 +6,9 @@ class Peli:
         pygame.init()
         self.naytto = alusta
         self.robo = pygame.image.load("/home/kivimani/ot-harjoitustyo/laskarit/pacman-app/src/assets/pacman.png")
-        ## kuva netistä: https://www.freeiconspng.com/thumbs/pacman-png/pacman-png-18.png
-        self.vihollinen = pygame.image.load("/home/kivimani/ot-harjoitustyo/laskarit/pacman-app/src/assets/pacman.png")
+        # kuva netistä: https://www.freeiconspng.com/thumbs/pacman-png/pacman-png-18.png
+        self.vihollinen = pygame.image.load("/home/kivimani/ot-harjoitustyo/laskarit/pacman-app/src/assets/goblin.jpeg")
+        # Tilapäinen kuva netistä: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pikpng.com%2Fpngvi%2FiibowJ_goblins-shop-is-a-pixel-art-simulation-game-in-which-pixel-goblin%2F&psig=AOvVaw2DuW_pqXEATlgOSg9EPMfm&ust=1649881569725000&source=images&cd=vfe&ved=0CAcQjRxqFwoTCKCn9_itj_cCFQAAAAAdAAAAABAb
         self.y = 50
         self.x = 50
         self.vihollisen_x = 600
