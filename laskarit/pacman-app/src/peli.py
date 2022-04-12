@@ -1,18 +1,16 @@
 import pygame
-
 class Peli:
-
     def __init__(self, alusta):
         pygame.init()
         self.naytto = alusta
         self.robo = pygame.image.load("pacman.png")
         self.vihollinen = pygame.image.load("goblin.jpeg")
         self.y = 50 # pylint: disable=invalid-name
-        self.x = 50
-        self.vihollisen_x = 600
-        self.vihollisen_y = 300
-        self.ny = 2
-        self.nx = 2
+        self.x = 50 # pylint: disable=invalid-name
+        self.vihollisen_x = 600 # pylint: disable=invalid-name
+        self.vihollisen_y = 300 # pylint: disable=invalid-name
+        self.ny = 2 # pylint: disable=invalid-name
+        self.nx = 2 # pylint: disable=invalid-name
         self.ylos = False
         self.alas = False
         self.oikealle = False
