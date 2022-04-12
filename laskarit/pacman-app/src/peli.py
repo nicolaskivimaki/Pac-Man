@@ -22,54 +22,33 @@ class Peli:
         self.kello.tick(60)
         
 
-    def _handle_events(self):
+    def _handle_events(self): 
         for tapahtuma in pygame.event.get():
 
-            if tapahtuma.type == pygame.KEYDOWN:
+            if tapahtuma.type == pygame.KEYDOWN: # pylint: disable=no-member
 
-                if tapahtuma.key == pygame.K_LEFT:
+                if tapahtuma.key == pygame.K_LEFT:# pylint: disable=no-member
                     self.vasemmalle = True
-                if tapahtuma.key == pygame.K_RIGHT:
+                if tapahtuma.key == pygame.K_RIGHT:# pylint: disable=no-member
                     self.oikealle = True
-                if tapahtuma.key == pygame.K_UP:
+                if tapahtuma.key == pygame.K_UP:# pylint: disable=no-member
                     self.ylos = True
-                if tapahtuma.key == pygame.K_DOWN:
+                if tapahtuma.key == pygame.K_DOWN:# pylint: disable=no-member
                     self.alas = True
 
-            if tapahtuma.type == pygame.KEYUP:
+            if tapahtuma.type == pygame.KEYUP:# pylint: disable=no-member
 
-                if tapahtuma.key == pygame.K_LEFT:
+                if tapahtuma.key == pygame.K_LEFT:# pylint: disable=no-member
                     self.vasemmalle = False
-                if tapahtuma.key == pygame.K_RIGHT:
+                if tapahtuma.key == pygame.K_RIGHT:# pylint: disable=no-member
                     self.oikealle = False
-                if tapahtuma.key == pygame.K_UP:
+                if tapahtuma.key == pygame.K_UP:# pylint: disable=no-member
                     self.ylos = False
-                if tapahtuma.key == pygame.K_DOWN:
+                if tapahtuma.key == pygame.K_DOWN:# pylint: disable=no-member
                     self.alas = False
 
-            if tapahtuma.type == pygame.QUIT:
+            if tapahtuma.type == pygame.QUIT:# pylint: disable=no-member
                 exit()
-
-    def _liikuta_vasen(self):
-        
-        if self.x > 0:
-            self.x -= 10
-
-    def _liikuta_oikea(self):
-
-        if self.x < 1000-self.robo.get_width():
-                self.x += 10
-
-    def _liikuta_ylos(self):
-
-        if self.y > 0:
-                self.y -= 10
-
-    def _liikuta_alas(self):
-
-        if self.y < 1000-self.robo.get_height():
-                self.y += 10
-
 
 
     def _liikuta(self):
