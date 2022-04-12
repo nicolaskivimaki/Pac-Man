@@ -1,6 +1,6 @@
 # Pacman
 
-Dokumentaatiot
+## Dokumentaatiot
 
 [gitlog.txt](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/laskarit/viikko1/gitlog.txt)
 
