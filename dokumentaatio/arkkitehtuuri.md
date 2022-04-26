@@ -34,7 +34,10 @@ classDiagram
  
 
 ```
-*Kaavio kuvaa pelin käynnistymistä aloitus näytöstä pelin loppumiseen*
+
+
+
+**Kaavio kuvaa pelin käynnistymistä aloitus näytöstä pelin loppumiseen**
 
 ```mermaid
 
