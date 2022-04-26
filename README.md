@@ -19,9 +19,9 @@
 
 ### Ohjelman suorittaminen
 
-Ohjelman pystyy suorittamaan komennolla:
+Ohjelman pystyy suorittamaan hakemistossa pacman-app seuraavalla komennolla:
 
-bash
+```bash
 poetry run invoke start
 
 
