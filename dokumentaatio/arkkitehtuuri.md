@@ -34,6 +34,7 @@ classDiagram
  
 
 ```
+*Kaavio kuvaa pelin käynnistymistä aloitus näytöstä pelin loppumiseen*
 
 ```mermaid
 
@@ -49,10 +50,12 @@ Peli->>Peli: Peli.kaynnista()
 Peli->>Peli: Peli._aloita_tapahtumat()
 Peli->>Peli: Peli.start_draw()
 Peli->>Peli: Peli._aloita_peli()
+
 Peli->>Events: pygame.get()
 activate Events
 Events->>Peli: 
 deactivate Events
+
 Peli->>Pelipyörii: start()
 activate Pelipyörii
 Pelipyörii->>Peli: 
