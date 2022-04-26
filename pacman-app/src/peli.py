@@ -1,4 +1,5 @@
-import pygame, sys
+import sys
+import pygame
 from events import Events
 from pelipyorii import PeliPyorii
 class Peli:
@@ -39,9 +40,8 @@ class Peli:
                 self.kaynnissa = False
             if event.type == pygame.KEYDOWN and event.key == pygame.K_a:
                 self.tila = 'pelaa'
-                
     def start_draw(self):
-        self.naytto.fill((0,0,0))
+        self.naytto.fill((0, 0, 0))
         self._tekstit('PAINA "a" ALOITTAAKSESI', self.naytto, [self.leveys//2, self.korkeus//2], 50, (100, 200, 100), 'arial light', centered=True)
         self._tekstit('TERVETULOA!', self.naytto, [self.leveys//2, self.korkeus//2-80], 50, (250, 0, 0), 'arial black', centered=True)
         self._tekstit('ENKKA:', self.naytto, [self.leveys//2, 15], 24, (255, 255, 255), 'arial black', centered=True)
@@ -91,7 +91,7 @@ class Peli:
         while self.kaynnissa:
             if self.tila == 'start':
                 self._aloita_tapahtumat()
-                self.start_draw() 
+                self.start_draw()
             elif self.tila == "pelaa":
                 self._aloita_peli()
             else:
