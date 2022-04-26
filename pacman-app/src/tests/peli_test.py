@@ -1,3 +1,4 @@
+from curses import KEY_A1, KEY_DOWN
 import unittest
 import pygame
 from peli import Peli
@@ -5,8 +6,7 @@ from peli import Peli
 class TestPeli(unittest.TestCase):
 
     def setUp(self):
-        alusta = pygame.display.set_mode((1000, 1000))
-        self.peli = Peli(alusta)
+        self.peli = Peli()
 
     def test_toimiiko_vasen_reuna(self):
         self.peli.ylos = True
@@ -19,7 +19,7 @@ class TestPeli(unittest.TestCase):
         for i in range(1000):
             self.peli._liikuta()
         leveys = self.peli.robo.get_width()
-        self.assertEqual(str(self.peli.x), f"{1000-leveys}")
+        self.assertEqual(str(self.peli.x), f"{self.peli.leveys-leveys}")
 
     def test_liikkuuko_toinen_hahmo_ylos(self):
         for i in range(10):
@@ -30,6 +30,12 @@ class TestPeli(unittest.TestCase):
         for i in range(10):
             self.peli._liikuta_vihollista()
         self.assertNotEqual(str(self.peli.vihollisen_x), "600")
+
+    def test_toimiiko_alkunaytto(self):
+        self.peli._kaynnista()
+        event = pygame.event.Event(pygame.KEYDOWN, pygame.K_a)
+        pygame.event.post(event)
+        self.assertEqual(str(self.peli.tila), "pelaa")
 
     
 
