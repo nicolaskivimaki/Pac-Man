@@ -23,6 +23,7 @@ Ohjelman pystyy suorittamaan hakemistossa ot-harjoitustyo/pacman-app seuraavalla
 
 ```bash
 poetry run invoke start
+```
 
 
 ### Testaus
