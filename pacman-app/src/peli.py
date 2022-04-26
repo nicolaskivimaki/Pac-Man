@@ -4,7 +4,7 @@ from pelipyorii import PeliPyorii
 class Peli:
     def __init__(self):
         pygame.init()
-        self.tila = 'start'
+        self.tila = "start"
         self.kaynnissa = True
         self.korkeus = 1000
         self.leveys = 1000
@@ -24,6 +24,7 @@ class Peli:
         self.alas = False
         self.oikealle = False
         self.vasemmalle = False
+
     def _tekstit(self, words, screen, pos, size, colour, font_name, centered=False):
         font = pygame.font.SysFont(font_name, size)
         text = font.render(words, False, colour)
@@ -38,25 +39,26 @@ class Peli:
                 self.kaynnissa = False
             if event.type == pygame.KEYDOWN and event.key == pygame.K_a:
                 self.tila = 'pelaa'
+                
     def start_draw(self):
         self.naytto.fill((0,0,0))
-        self._tekstit('PAINA "a" ALOITTAAKSESI', self.naytto, [
-                       self.leveys//2, self.korkeus//2], 50, (100, 200, 100), 'arial light', centered=True)
-        self._tekstit('TERVETULOA!', self.naytto, [
-                       self.leveys//2, self.korkeus//2-80], 50, (250, 0, 0), 'arial black', centered=True)
-        self._tekstit('ENKKA:', self.naytto, [self.leveys//2, 15],
-                       24, (255, 255, 255), 'arial black', centered=True)
+        self._tekstit('PAINA "a" ALOITTAAKSESI', self.naytto, [self.leveys//2, self.korkeus//2], 50, (100, 200, 100), 'arial light', centered=True)
+        self._tekstit('TERVETULOA!', self.naytto, [self.leveys//2, self.korkeus//2-80], 50, (250, 0, 0), 'arial black', centered=True)
+        self._tekstit('ENKKA:', self.naytto, [self.leveys//2, 15], 24, (255, 255, 255), 'arial black', centered=True)
         pygame.display.update()
+
     def paivita(self):
         self._liikuta()
         self._liikuta_vihollista()
         self._lataa_naytto()
+
     def _lataa_naytto(self):
         self.naytto.fill((0, 0, 0))
         self.naytto.blit(self.robo, (self.x, self.y))
         self.naytto.blit(self.vihollinen, (self.vihollisen_x, self.vihollisen_y))
         pygame.display.flip()
         self.kello.tick(60)
+
     def _liikuta(self):
         if self.ylos:
             if self.y > 0:
@@ -70,6 +72,7 @@ class Peli:
         if self.oikealle:
             if self.x < self.leveys-self.robo.get_width():
                 self.x += 10
+
     def _liikuta_vihollista(self):
         self.vihollisen_x += self.nx
         self.vihollisen_y += self.ny
@@ -83,6 +86,7 @@ class Peli:
             self.nx = -self.nx
         if self.nx < 0 and self.vihollisen_x <= 0:
             self.nx = -self.nx
+
     def _kaynnista(self):
         while self.kaynnissa:
             if self.tila == 'start':
@@ -95,10 +99,10 @@ class Peli:
             self.kello.tick(60)
         pygame.quit()
         sys.exit()
+
     def _aloita_peli(self):
         events = Events()
         peli = Peli()
         peli_pyorii = PeliPyorii(peli, self.naytto, events)
         pygame.init()
         peli_pyorii.start()
-        
