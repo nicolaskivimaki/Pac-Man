@@ -19,7 +19,7 @@
 
 ### Ohjelman suorittaminen
 
-Ohjelman pystyy suorittamaan hakemistossa pacman-app seuraavalla komennolla:
+Ohjelman pystyy suorittamaan hakemistossa ot-harjoitustyo/pacman-app seuraavalla komennolla:
 
 ```bash
 poetry run invoke start
