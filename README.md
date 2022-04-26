@@ -2,8 +2,6 @@
 
 ## Dokumentaatiot
 
-[gitlog.txt](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/laskarit/viikko1/gitlog.txt)
-
 [vaatimusmaarittely.md](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/vaatimusmaarittely.md)
 
 [tyoaikakirjanpito.md](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/tuntikirjanpito.md)
@@ -19,7 +17,7 @@
 
 ### Ohjelman suorittaminen
 
-Ohjelman pystyy suorittamaan hakemistossa ot-harjoitustyo/pacman-app seuraavalla komennolla:
+Ohjelman pystyy suorittamaan poetry shell ympäristössä hakemistossa ot-harjoitustyo/pacman-app seuraavalla komennolla:
 
 ```bash
 poetry run invoke start
