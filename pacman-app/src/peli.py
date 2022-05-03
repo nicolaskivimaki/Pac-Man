@@ -1,9 +1,9 @@
 import sys
+import os
 import pygame
 import assets
 from events import Events
 from pelipyorii import PeliPyorii
-import os
 dirname = os.path.dirname(__file__)
 
 class Peli:
@@ -64,6 +64,7 @@ class Peli:
         pygame.display.update()
 
     def paivita(self):
+        """Päivittää """
         self._liikuta()
         self._liikuta_vihollista()
         self._lataa_naytto()
