@@ -12,6 +12,8 @@
 
 [releases](https://github.com/nicolaskivimaki/ot-harjoitustyo2/releases/tag/viikko5)
 
+[kayttoohje](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/kayttoohje.md)
+
 
 ## Komentorivitoiminnot
 
