@@ -66,7 +66,7 @@ classDiagram
 
 
 
-**Alla oleva kaavio kuvaa pelin käynnistymistä aloitus näytöstä pelin loppumiseen**
+**Pelin aloituksesta lopettamiseen**
 ```mermaid
 
 sequenceDiagram
