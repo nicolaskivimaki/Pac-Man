@@ -1,3 +1,32 @@
+## Käyttöliittymä
+
+Käyttöliittymä sisältää kolme erillistä näkymää:
+
+- Aloitusnäyttö
+- Pelaaminen
+- Lopetusnäyttö
+
+mermaid
+classDiagram
+  Aloitusnaytto--|>Peli
+  Peli--|>Lopetus
+ 
+  class Aloitusnaytto{
+    aloita_peli()
+   
+   }
+  class Peli{
+    pelaa()
+  }
+ 
+  class Lopetus{
+    lopeta_peli()
+  }
+
+
+# Pelin rakenne jakautuu eri rakenteisiin
+
+
 ```mermaid
 classDiagram
   Index<|--Peli
