@@ -3,8 +3,15 @@ import pygame
 import assets
 from events import Events
 from pelipyorii import PeliPyorii
+import os
+dirname = os.path.dirname(__file__)
+
 class Peli:
+    """ Luokka, joka luo, ylläpitää ja muokkaa pelin hahmoja"""
+
     def __init__(self):
+        """Luokan konstruktori, joka luo pelin hahmot, antaa niille sijainnin ja säilyttää tietoja hahmon liikuttamisesta"""
+
         pygame.init()
         self.tila = "start"
         self.kaynnissa = True
@@ -12,9 +19,9 @@ class Peli:
         self.leveys = 1000
         self.naytto = pygame.display.set_mode((self.korkeus, self.leveys))
         self.kello = pygame.time.Clock()
-        self.robo = pygame.image.load("src/assets/pacman.png")
+        self.robo = pygame.image.load(os.path.join(dirname, "assets", "pacman.png"))
         self.robo = pygame.transform.smoothscale(self.robo, (50, 50))
-        self.vihollinen = pygame.image.load("pacman-app/src/assets/goblin.jpeg")
+        self.vihollinen = pygame.image.load(os.path.join(dirname, "assets", "goblin.jpeg"))
         self.vihollinen = pygame.transform.smoothscale(self.vihollinen, (50, 50))
         self.y = 50 # pylint: disable=invalid-name
         self.x = 50 # pylint: disable=invalid-name
@@ -28,6 +35,8 @@ class Peli:
         self.vasemmalle = False
 
     def _tekstit(self, words, screen, pos, size, colour, font_name, centered=False):
+        """Luo tekstin ulkonäköä"""
+
         font = pygame.font.SysFont(font_name, size)
         text = font.render(words, False, colour)
         text_size = text.get_size()
@@ -35,13 +44,19 @@ class Peli:
             pos[0] = pos[0]-text_size[0]//2
             pos[1] = pos[1]-text_size[1]//2
         screen.blit(text, pos)
+        
     def _aloita_tapahtumat(self):
+        """Asetetaan pelin tila"""
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.kaynnissa = False
             if event.type == pygame.KEYDOWN and event.key == pygame.K_a:
                 self.tila = 'pelaa'
+
     def start_draw(self):
+        """Piirretään tekstit näytölle"""
+
         self.naytto.fill((0, 0, 0))
         self._tekstit('PAINA "a" ALOITTAAKSESI', self.naytto, [self.leveys//2, self.korkeus//2], 50, (100, 200, 100), 'arial light', centered=True)
         self._tekstit('TERVETULOA!', self.naytto, [self.leveys//2, self.korkeus//2-80], 50, (250, 0, 0), 'arial black', centered=True)
