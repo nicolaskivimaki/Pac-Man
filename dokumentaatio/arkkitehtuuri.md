@@ -24,7 +24,7 @@ classDiagram
   }
 ```
 
-# Pelin rakenne jakautuu eri rakenteisiin
+# Pelin rakenteita
 
 
 ```mermaid
