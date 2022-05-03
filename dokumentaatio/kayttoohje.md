@@ -1,6 +1,6 @@
 # Käyttöohje
 
-Lataa projektin viimeisimmän [releasen](https://github.com/tuovinenemma/ot-harjoitustyo1/releases) lähdekoodi valitsemalla _Assets_-osion alta _Source code_.
+Lataa projektin viimeisimmän [releasen](https://github.com/nicolaskivimaki/ot-harjoitustyo2/releases) lähdekoodi valitsemalla _Assets_-osion alta _Source code_.
                                        
 ## Asennus
 
