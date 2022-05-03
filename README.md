@@ -10,7 +10,7 @@
 
 [changelog.md](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/changelog.md)
 
-[releases](https://github.com/nicolaskivimaki/ot-harjoitustyo2/releases/tag/viikko5)
+[releases](https://github.com/nicolaskivimaki/ot-harjoitustyo2/releases)
 
 [kayttoohje](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/kayttoohje.md)
 
