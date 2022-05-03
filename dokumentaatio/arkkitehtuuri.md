@@ -1,4 +1,4 @@
-## Käyttöliittymä
+# Käyttöliittymä
 
 Käyttöliittymä sisältää kolme erillistä näkymää:
 
