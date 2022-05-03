@@ -66,7 +66,7 @@ classDiagram
 
 
 
-**Pelin aloituksesta lopettamiseen**
+# Pelin aloituksesta lopettamiseen
 ```mermaid
 
 sequenceDiagram
