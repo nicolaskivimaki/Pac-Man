@@ -67,6 +67,9 @@ classDiagram
 
 
 # Pelin aloituksesta lopettamiseen
+
+ALoitusnäytöstä päästään peliin painamalla näppäintä "a". Pelin hahmoja voi liikutella nuolinäppäimillä.
+
 ```mermaid
 
 sequenceDiagram
