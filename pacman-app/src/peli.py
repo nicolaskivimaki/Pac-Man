@@ -19,9 +19,9 @@ class Peli:
         self.leveys = 1000
         self.naytto = pygame.display.set_mode((self.korkeus, self.leveys))
         self.kello = pygame.time.Clock()
-        self.robo = pygame.image.load(os.path.join(dirname, "assets", "pacman.png"))
+        self.robo = pygame.image.load(os.path.join(dirname, "..", "assets", "pacman.png"))
         self.robo = pygame.transform.smoothscale(self.robo, (50, 50))
-        self.vihollinen = pygame.image.load(os.path.join(dirname, "assets", "goblin.jpeg"))
+        self.vihollinen = pygame.image.load(os.path.join(dirname, "..", "assets", "goblin.jpeg"))
         self.vihollinen = pygame.transform.smoothscale(self.vihollinen, (50, 50))
         self.y = 50 # pylint: disable=invalid-name
         self.x = 50 # pylint: disable=invalid-name
@@ -44,7 +44,7 @@ class Peli:
             pos[0] = pos[0]-text_size[0]//2
             pos[1] = pos[1]-text_size[1]//2
         screen.blit(text, pos)
-        
+
     def _aloita_tapahtumat(self):
         """Asetetaan pelin tila"""
 
