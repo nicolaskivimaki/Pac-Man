@@ -6,7 +6,7 @@ Käyttöliittymä sisältää kolme erillistä näkymää:
 - Pelaaminen
 - Lopetusnäyttö
 
-mermaid
+```mermaid
 classDiagram
   Aloitusnaytto--|>Peli
   Peli--|>Lopetus
@@ -22,7 +22,7 @@ classDiagram
   class Lopetus{
     lopeta_peli()
   }
-
+```
 
 # Pelin rakenne jakautuu eri rakenteisiin
 
