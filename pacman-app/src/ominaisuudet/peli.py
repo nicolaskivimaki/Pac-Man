@@ -1,9 +1,8 @@
 import sys
 import os
 import pygame
-import assets
-from events import Events
-from pelipyorii import PeliPyorii
+from ominaisuudet.events import Events
+from ominaisuudet.pelipyorii import PeliPyorii
 dirname = os.path.dirname(__file__)
 
 class Peli:
@@ -19,9 +18,9 @@ class Peli:
         self.leveys = 1000
         self.naytto = pygame.display.set_mode((self.korkeus, self.leveys))
         self.kello = pygame.time.Clock()
-        self.robo = pygame.image.load(os.path.join(dirname, "assets", "pacman.png"))
+        self.robo = pygame.image.load(os.path.join(dirname, "..", "assets", "pacman.png"))
         self.robo = pygame.transform.smoothscale(self.robo, (50, 50))
-        self.vihollinen = pygame.image.load(os.path.join(dirname, "assets", "goblin.jpeg"))
+        self.vihollinen = pygame.image.load(os.path.join(dirname, "..", "assets", "goblin.jpeg"))
         self.vihollinen = pygame.transform.smoothscale(self.vihollinen, (50, 50))
         self.y = 50 # pylint: disable=invalid-name
         self.x = 50 # pylint: disable=invalid-name
