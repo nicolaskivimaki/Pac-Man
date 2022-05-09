@@ -1,6 +1,7 @@
 import sys
 import os
 import pygame
+from level import *
 from ominaisuudet.events import Events
 from ominaisuudet.pelipyorii import PeliPyorii
 dirname = os.path.dirname(__file__)
@@ -18,6 +19,9 @@ class Peli:
         self.leveys = 1000
         self.naytto = pygame.display.set_mode((self.korkeus, self.leveys))
         self.kello = pygame.time.Clock()
+        self.screen = pygame.display.set_mode((560, 640))
+        self.level = Level()
+
         self.robo = pygame.image.load(os.path.join(dirname, "..", "assets", "pacman.png"))
         self.robo = pygame.transform.smoothscale(self.robo, (50, 50))
         self.vihollinen = pygame.image.load(os.path.join(dirname, "..", "assets", "goblin.jpeg"))
@@ -119,6 +123,9 @@ class Peli:
     def _aloita_peli(self):
         events = Events()
         peli = Peli()
+        screen = pygame.display.set_mode((560, 640))
+        level = Level()
+        pygame.display.update()
         peli_pyorii = PeliPyorii(peli, self.naytto, events)
         pygame.init()
         peli_pyorii.start()
