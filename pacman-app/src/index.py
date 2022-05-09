@@ -1,4 +1,4 @@
-from peli import Peli
+from ominaisuudet.peli import Peli
 def main():
     peli = Peli()
     peli._kaynnista()
