@@ -23,43 +23,70 @@ classDiagram
     lopeta_peli()
   }
 ```
+Jokainen näistä näkymistä on toteutettu omina luokkinaan. Näkymistä pääsee siirtymään erinlaisilla näppäimistö komennuksilla. Sovelluksen näkymä muokkaantuu pelin kulkiessa.
 
 # Pelin rakenteita
 
+```mermaid
+classDiagram
+src--Features
+Features--Assets
+Assets--Sprites
+Sprites--Tests
+class Features{
+    
+
+  }
+  class Assets{
+    
+
+  }
+  class Sprites{
+    
+
+  }
+  class Tests{
+    
+
+  }
+  class src{
+    
+
+  }
+
+```
+# Rakennelogiikka
+
+Rakennuslogiikan avulla ohjelman järjestelmällisyys pysyy järkevänä. Näin eri luokituksille suunnatut kansiot auttavat kuvastamaan niihin sisällettyjä tiedostoja.
+
+# Päätoiminnallisuutta
 
 ```mermaid
 classDiagram
-  Index<|--Peli
-  Index<|--Pelipyorii
-  Index<|--Events
-  Peli--Pelipyorii
-  Pelipyorii--Events
+  Main<|--Game
+  Main<|--Events
   
-  class Index{
+  
+  
+  class Main{
   main()
 
   }
 
-  class Pelipyorii{
-    _handle_events()
-    _aloitapeli()
-
-  }
-  
-  
-  class Peli{
-  
-  _liikuta_robo()
-  _vihollinen_liikkuu()
-  _lataa_naytto()
-
-
-  }
-
   class Events{
-    pygame.event.get()
+   
 
   }
+  
+  
+  class Game{
+  
+  
+
+
+  }
+
+
  
 
 ```
@@ -68,7 +95,7 @@ classDiagram
 
 # Pelin aloituksesta lopettamiseen
 
-ALoitusnäytöstä päästään peliin painamalla näppäintä "a". Pelin hahmoja voi liikutella nuolinäppäimillä.
+Aloitusnäytöstä päästään peliin painamalla näppäintä "a". Pelin hahmoja voi liikutella nuolinäppäimillä.
 
 ```mermaid
 
@@ -97,3 +124,33 @@ deactivate Pelipyörii
 Peli->>Main: sys.exit()
 deactivate Peli
 ```
+Pelin lopetuksen voi toteuttaa "SPACE" tämä toteuttaa ohjelmmalle exit komennon.
+
+
+# Pelin eri hahmot ja niiden toiminnallisuus
+
+```mermaid
+classDiagram
+
+Game<|--Pacman
+Game<|--Ghosts
+
+class Pacman{
+  move()
+  can_move()
+  collision()
+  
+
+  }
+  
+  
+class Ghosts{
+  move()
+  can_move()
+  collision()
+  
+
+
+  }
+```
+
