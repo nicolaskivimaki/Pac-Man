@@ -6,25 +6,25 @@
       
 # Perusversion suunnitellut toiminnallisuudet
 	
-	Ennen peliä:
-	- Aloitusnäyttö. 
-	- Pelaaja voi aloittaa pelin A-nappia painamalla.
+Ennen peliä:
+- Aloitusnäyttö. 
+- Pelaaja voi aloittaa pelin A-nappia painamalla.
 
-	Pelin aikana:
-	-Pacman hahmo. 
-	-Haamu hahmo. *
-	-Hahmojen liikehdintä:
-	 Pacmanin ohjaus näppäinten avulla. 
-	 Haamun satunnanvarainen liikehdintä taustalla. 
-	- Peli alkaa tilanteesta, jossa aaveet ovat keskellä ja Pac-Man kentällä.
-      - Kentällä liikkuu myös  haamuja, jotka yrittävät saada Pac-Manin kiinni.
-      - Elämän menetettyä Pac-Man palaa takaisin kulmaan, josta peli jatkuu ja jos kaikki elämät on menetetty 		Pac-Man kuolee ja peli päättyy.
-      - Näytölle ilmestyy loppuvalikko.
-      - Peli tallentaa pelaaja keräämiä pisteitä
-      - Peli tallentaa high scorea
-      - Erilaisia kerättäviä rahapalkintoja, joiden avulla Pac-Man saa pisteitä.
+Pelin aikana:
+-Pacman hahmo. 
+-Haamu hahmo. *
+-Hahmojen liikehdintä:
+ Pacmanin ohjaus näppäinten avulla. 
+ Haamun satunnanvarainen liikehdintä taustalla. 
+- Peli alkaa tilanteesta, jossa aaveet ovat keskellä ja Pac-Man kentällä.
+- Kentällä liikkuu myös  haamuja, jotka yrittävät saada Pac-Manin kiinni.
+- Elämän menetettyä Pac-Man palaa takaisin kulmaan, josta peli jatkuu ja jos kaikki elämät on menetetty Pac-Man kuolee ja peli päättyy.
+- Näytölle ilmestyy loppuvalikko.
+- Peli tallentaa pelaaja keräämiä pisteitä
+- Peli tallentaa high scorea
+- Erilaisia kerättäviä rahapalkintoja, joiden avulla Pac-Man saa pisteitä.
 
       
 
-	Pelin jälkeen:
-	- Pelaaja voi aloittaa pelin SPACE- napista tai lopettaa sen E- napista.
+Pelin jälkeen:
+- Pelaaja voi aloittaa pelin SPACE- napista tai lopettaa sen E- napista.
