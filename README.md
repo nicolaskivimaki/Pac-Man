@@ -16,6 +16,7 @@ Pac-Man on sokkelopeli, jossa Pac-Man-niminen keltainen pallo syö pisteitä ja 
 
 [kayttoohje](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/kayttoohje.md)
 
+[testaus](https://github.com/nicolaskivimaki/ot-harjoitustyo2/blob/main/dokumentaatio/testausdokumentti.md)
 
 ## Komentorivitoiminnot
 
