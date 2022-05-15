@@ -17,9 +17,7 @@ poetry run invoke start
 
 ```
 
-## Aloitus
 
-- Paina "a"-näppäintä aloittaaksesi pelin
 
 ## Pelaaminen
 
@@ -41,7 +39,4 @@ poetry run invoke start
 
 - Ennätysmäärän voit nähdä näytön yläkulmasta.
 
-## Lopetus
-- Pelin loputtua päädyt lopetus näytölle.
 
-- Sieltä voit joko yrittää peliä uudelleen painamalla nappia "SPACE" tai lopettaa pelin painamalla nappia "E".
