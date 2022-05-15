@@ -25,6 +25,7 @@ class Game:
         self._pacman = Pacman(self._speed)
         self._ghosts = Ghosts(self._speed)
         self._event_handler = HandleEvents(self._events)
+        self._money = 0
 
     def _run_game(self):
 
@@ -74,10 +75,18 @@ class Game:
             return
         self._pacman._direction = direction
         
+    def _coin_collision(self):
+
+        collision = pygame.sprite.spritecollide(self._pacman, self._level._coins, True)
+        for coin in collision:
+            self._money += 10
+            self._level._coins.remove(coin)
+
 
     def _game_render(self):
         self._level._draw_level()
         self._pacman_can_move()
+        self._coin_collision()
         self._screen.blit(self._pacman._pacman, (self._pacman.rect.x, self._pacman.rect.y))
         self._screen.blit(self._ghosts._ghosts, (self._ghosts.rect.x, self._ghosts.rect.y))
 

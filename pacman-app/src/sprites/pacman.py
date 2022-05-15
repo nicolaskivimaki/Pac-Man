@@ -10,8 +10,8 @@ class Pacman(pygame.sprite.Sprite):
         self._pacman = pygame.transform.smoothscale(self._pacman, (30, 30))
         self._speed = speed
         self.rect = self._pacman.get_rect()
-        self.rect.x = 30
-        self.rect.y = 90
+        self.rect.x = 210
+        self.rect.y = 300
         self._direction = 0
 
 
