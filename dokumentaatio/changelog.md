@@ -18,3 +18,8 @@
 
 - Pelin avaaminen toimii muillakin koneilla
 - Dokumentaatiota lisätty
+
+## Viikko7
+- Pelin toiminnallisuudet: pelin level, hahmot, kerättävät rahapalkinnot
+- Käyttöliittymän siistiminen ja toiminnallisuuden varmistaminen
+- Eri luokkien luominen

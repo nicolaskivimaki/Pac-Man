@@ -17,6 +17,26 @@ poetry run invoke start
 
 ```
 
+
+
 ## Pelaaminen
 
-Paina "a"-näppäintä aloittaaksesi pelin
+- Painamalla näppäimistön näppäimiö luot Pac-Manille komentoja liikkumiseen.
+
+- Näppäimistö toiminnallisuudella: LEFT; RIGHT; UP; DOWN
+
+- Kerää Pac-Manille rahapalkintoja liikkumalla ympäristössä.
+
+- Muista vältellä haamuja.
+
+- Osuessasi haamuun menetät elämän.
+
+- Elämien loppuessa peli loppuu.
+
+- Keräämäsi rahat voi nähdä näytön yläkulmassa.
+
+- Tavoitteena on kerätä kaikki palkinnot ja rikkoa ennetysmäärä.
+
+- Ennätysmäärän voit nähdä näytön yläkulmasta.
+
+
