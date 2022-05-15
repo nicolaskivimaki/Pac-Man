@@ -1,6 +1,8 @@
 import pygame 
 
 class Score:
+    """ keeps the score
+    """
 
     def __init__(self):
         self._money = 0

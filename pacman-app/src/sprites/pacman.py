@@ -4,7 +4,8 @@ import os
 dirname = os.path.dirname(__file__)
 
 class Pacman(pygame.sprite.Sprite):
-
+    """creates pacman and moves it
+    """
     def __init__(self, speed, image=None):
         self._pacman = pygame.image.load(os.path.join(dirname, "..", "assets", "pacman.png"))
         self._pacman = pygame.transform.smoothscale(self._pacman, (30, 30))

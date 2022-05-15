@@ -6,6 +6,8 @@ dirname = os.path.dirname(__file__)
 class Ghosts(pygame.sprite.Sprite):
 
     def __init__(self, speed):
+        """creates ghosts and checks their movements
+        """
         super().__init__()
         self._ghost = pygame.image.load(os.path.join(dirname, "..", "assets", "ghost.png"))
         self._ghost = pygame.transform.smoothscale(self._ghost, (30, 30))
@@ -17,6 +19,8 @@ class Ghosts(pygame.sprite.Sprite):
         self._counter = 30
         
     def _move_ghost(self, direction, opposite=False):
+        """ movement for ghosts
+        """
         if opposite:
             if direction == 1:
                 self.rect.x += self._speed

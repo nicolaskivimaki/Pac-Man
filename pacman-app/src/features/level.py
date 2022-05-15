@@ -41,6 +41,8 @@ LEVEL_1 = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 
 
 class Level:
+    """ Creates the level for the game
+    """
 
     def __init__(self, screen):
         self._screen = screen
@@ -88,7 +90,8 @@ class Level:
 
 
 class Wall(pygame.sprite.Sprite):
-
+    """ wall icon
+    """
     def __init__(self, x, y):
         super().__init__()
         image = pygame.Surface((30, 30))
@@ -110,6 +113,8 @@ class Path(pygame.sprite.Sprite):
         self.rect.y = y
         
 class Coin(pygame.sprite.Sprite):
+    """ coin icon
+    """
     def __init__(self, x, y):
         super().__init__()
         image = pygame.image.load(os.path.join(dirname, "..", "assets", "coin.png"))
@@ -120,6 +125,8 @@ class Coin(pygame.sprite.Sprite):
 
 
 class Cash(pygame.sprite.Sprite):
+    """ cash icon
+    """
     def __init__(self, x, y):
         super().__init__()
         image = pygame.image.load(os.path.join(dirname, "..", "assets", "cash.png"))

@@ -1,12 +1,12 @@
 import sys
 import os
 import pygame
-from ominaisuudet.level import *
-from ominaisuudet.events import Events
-from ominaisuudet.pelipyorii import *
+from features.level import *
+from features.events import Events
+from features.pelipyorii import *
 from sprites.pacman import Pacman
 from sprites.ghosts import Ghosts
-from ominaisuudet.score import Score
+from features.score import Score
 
 dirname = os.path.dirname(__file__)
 
@@ -14,7 +14,7 @@ class Game:
     """ Luokka, joka luo, ylläpitää ja muokkaa pelin hahmoja"""
 
     def __init__(self):
-        """Luokan konstruktori, joka luo pelin hahmot, antaa niille sijainnin ja säilyttää tietoja hahmon liikuttamisesta"""
+        """Creates charecters and moves them"""
         pygame.init()
         self._state = "playing"
         self._clock = pygame.time.Clock()
@@ -50,6 +50,8 @@ class Game:
             self._all_ghosts.add(ghost)
 
     def _money_collision(self):
+        """ checks collision with money
+        """
 
         coin_collision = pygame.sprite.spritecollide(self._pacman, self._level._coins, True)
         for coin in coin_collision:
@@ -62,6 +64,8 @@ class Game:
             self._level._cash.remove(cash)
     
     def _check_lives(self):
+        """ checks lives after collision with a ghost
+        """
         direction = self._event_handler._handle_events()
         ghost_collision = self._pacman._collison_with_ghost(self._all_ghosts, self._ghosts, self._score, direction)
         if ghost_collision:
@@ -85,10 +89,14 @@ class Game:
         
 
     def _game_screen(self):
+        """ creates the game screen
+        """
         self._start_game()
         while True:
             self._event_handler._handle_events()
             self._game_render()
+            if self._score._lives == 0:
+                sys.exit()
             pygame.display.update()
             self._clock.tick(60)
             
