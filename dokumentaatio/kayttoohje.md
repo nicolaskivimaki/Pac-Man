@@ -19,20 +19,29 @@ poetry run invoke start
 
 ## Aloitus
 
-Paina "a"-näppäintä aloittaaksesi pelin
+- Paina "a"-näppäintä aloittaaksesi pelin
 
 ## Pelaaminen
 
-Painamalla näppäimistön näppäimiö luot Pac-Manille komentoja liikkumiseen.
-Näppäimistö toiminnallisuudella: LEFT; RIGHT; UP; DOWN
-Kerää Pac-Manille rahapalkintoja liikkumalla ympäristössä.
-Muista vältellä haamuja.
-Osuessasi haamuun menetät elämän.
-Elämien loppuessa peli loppuu.
-Keräämäsi rahat voi nähdä näytön yläkulmassa.
-Tavoitteena on kerätä kaikki palkinnot ja rikkoa ennetysmäärä.
-Ennätysmäärän voit nähdä näytön yläkulmasta.
+- Painamalla näppäimistön näppäimiö luot Pac-Manille komentoja liikkumiseen.
+
+- Näppäimistö toiminnallisuudella: LEFT; RIGHT; UP; DOWN
+
+- Kerää Pac-Manille rahapalkintoja liikkumalla ympäristössä.
+
+- Muista vältellä haamuja.
+
+- Osuessasi haamuun menetät elämän.
+
+- Elämien loppuessa peli loppuu.
+
+- Keräämäsi rahat voi nähdä näytön yläkulmassa.
+
+- Tavoitteena on kerätä kaikki palkinnot ja rikkoa ennetysmäärä.
+
+- Ennätysmäärän voit nähdä näytön yläkulmasta.
 
 ## Lopetus
-Pelin loputtua päädyt lopetus näytölle.
-Sieltä voit joko yrittää peliä uudelleen painamalla nappia "SPACE" tai lopettaa pelin painamalla nappia "E".
+- Pelin loputtua päädyt lopetus näytölle.
+
+- Sieltä voit joko yrittää peliä uudelleen painamalla nappia "SPACE" tai lopettaa pelin painamalla nappia "E".
